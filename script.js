@@ -9,7 +9,9 @@ document.addEventListener("DOMContentLoaded",function(){
     const twentyFourHrBtn = document.querySelector(".twenty-four-hr");
 
     let is24HourFormat = false;
-
+    twelveHrBtn.classList.add("white-bg");
+    twentyFourHrBtn.classList.remove("white-bg");
+    
     function updateTime(){
         const now = new Date();
         let hours = now.getHours();
@@ -40,10 +42,14 @@ document.addEventListener("DOMContentLoaded",function(){
      
     function switchTo12HourFormat(){
         is24HourFormat = false;
+        twelveHrBtn.classList.add("white-bg");
+        twentyFourHrBtn.classList.remove("white-bg");
         updateTime();
     }
     function switchTo24HourFormat(){
        is24HourFormat = true;
+       twelveHrBtn.classList.remove("white-bg");
+       twentyFourHrBtn.classList.add("white-bg");
        updateTime();
     }
 
