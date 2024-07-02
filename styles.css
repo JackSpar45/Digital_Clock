@@ -73,6 +73,16 @@ body {
 }
 .twelve-hr:hover, .twenty-four-hr:hover{
     transform: scale(1.1);
+    background-color: white;
+}
+.twelve-hr:hover > .format-container-text, .twenty-four-hr:hover > .format-container-text{
+    color: black;
+}
+.white-bg {
+    background-color: white;
+}
+.white-bg .format-container-text {
+    color: black;
 }
 
 .time-header{
